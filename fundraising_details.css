@@ -1,0 +1,385 @@
+/*------------.sticky-header{
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: black;
+
+
+/*---House Listing---*/
+
+
+section{
+	padding: 20px 5%;
+}
+.house-details{
+	padding: 0 12%;
+}
+.house-title{
+	margin-top: 50px;
+}
+.house-title h1{
+	font-weight: 600;
+}
+.house-title .row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 10px 0;
+}
+.house-title span{
+	margin: 0 20px;
+}
+.house-title i{
+	color: #ff5361;
+	font-size: 14px;
+}
+.gallery{
+	width: 50%;
+	grid-gap: 10px;
+	grid-template-areas: 'first first . .' 'first first . .';
+	margin: 20px 0;
+}
+.gallery div img{
+	width: 130%;
+	display: block;
+	border-radius: 10px;
+}
+.small-details h2{
+	font-weight: 500;
+}
+.small-details h4{
+	text-align: right;
+	font-size: 22px;
+}
+.line{
+	border: 0;
+	height: 1px;
+	background: #ccc;
+	width: 80%;
+	max-width: 600px;
+	margin: 10px 0 30px;
+}
+.date {
+	font-weight: 500;
+	font-size: 15px;
+}
+.fundraising_buttons {
+  display: flex;
+  justify-content: space-between; /* Adjust this based on your spacing preference */
+  margin-top: 20px; /* Add some spacing between image and buttons */
+}
+.fundraising_donate_btn{
+	width: 60%;
+	border-radius: 1rem;
+	padding: 10px 20px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.fundraising_donate_btn button{
+	width: 250px;
+	border: 0;
+	outline: none;
+	background: blue;
+	color: white;
+	padding: 15px;
+	font-size: 15px;
+	border-radius: 20px;
+}
+.fundraising_donate_btn button:hover{
+	color: red;
+	background: white;
+	border: 1px solid red;
+}
+.fundraising_donate_btn .share{
+	margin-left: 40px;
+}
+.fundraising_title{
+	background: #fff;
+	width: 60%;
+	padding: 5px 15px;
+}
+.fundraising_title i{
+	color: #555;
+	background:;
+	border-radius: 1rem;
+	font-size: 30px;
+
+}
+.fundraising_title span{
+	color: #555;
+	margin-bottom: 10px;
+}
+.guest-field{
+	flex: 1;
+}
+.details-list{
+	list-style: none;
+	margin: 50px 0;
+}
+.details-list li{
+	margin-left: 50px;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #555;
+	position: relative;
+}
+.details-list .word_of_support{
+	color: black;
+	margin-left: -2px;
+	font-weight: 600;
+}
+.details-list .word_of_support span{
+	font-size: 14px;
+	margin-top: 3px;
+}
+.details-list li span{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+.details-list .user-donator{
+	color: black;
+	font-weight: 600;
+}
+.details-list .user-donator h4{
+	margin-top: -1px;
+	font-weight: 500;
+	color: #555;
+	font-size: 14px;
+}
+.details-list .user-donator span{
+	color: #555;
+	margin-top: -1px;
+	font-size: 14px;
+}
+.details-list li i{
+	position: absolute;
+	top: 5px;
+	left: -40px;
+}
+.home-desc{
+	max-width: 550px;
+	margin-bottom: 30px;
+	margin-top: -20px;
+	line-height: 25px;
+}
+.map{
+	margin: 50px 0;
+}
+.map iframe{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.map h3{
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.map b{
+	display: block;
+	margin-bottom: 16px;
+}
+.organizer_bene{
+	font-weight: 500;
+}
+.host{
+	display: flex;
+	align-items: center;
+}
+
+.host img{
+	width: 50px;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+.host h2{
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.host i{
+	color: orange;
+}
+.contact-host{
+	display: inline-block;
+	margin: 40px 0 40px 120px;
+	text-decoration: none;
+	color: #555;
+	padding: 15px 50px;
+	border: 1px solid #ff5361;
+	border-radius: 8px;
+}
+.host .Beneficiary{
+	color: black;
+	margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+section{
+	padding: 30px 2%;
+}
+
+.sidenav {
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  top: 140px;
+  right: 200px;
+  background: white;
+  overflow-x: hidden;
+  padding: 20px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+.sidenav .donate-btn{
+	margin-bottom: 3px;
+	
+}
+.sidenav .donate-btn button{
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: blue;
+	color: white;
+	padding: 12px;
+	font-size: 15px;
+	border-radius: 1rem;
+	text-decoration: none;
+}
+.sidenav .donate-btn button:hover{
+	color: red;
+	background: white;
+	border: 1px solid red;
+}
+.sidenav .share-btn button{
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: blue;
+	color: white;
+	padding: 12px;
+	font-size: 15px;
+	border-radius: 1rem;
+}
+.sidenav .share-btn button:hover{
+	color: red;
+	background: white;
+	border: 1px solid red;
+}
+
+
+
+.sidenav a:hover {
+  color: #064579;
+}
+.sidenav h3{
+	font-weight: 400;
+}
+.sidenav .donate-list{
+	list-style: none;
+	margin: 20px 0;
+}
+.donate-list li{
+	margin-left: -10px;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #555;
+	position: relative;
+}
+.donate-list .donate-counter{
+	color: orange;
+	font-weight: 500;
+	margin-left: -10px;
+	font-size: 17px;
+}
+.donate-list li span{
+	display: block;
+	font-weight: 600;
+	font-size: 16px;
+	color: black;
+}
+.donate-list li i{
+	position: absolute;
+	left: -30px;
+}
+.sidenav .see-all-btn button{
+	border: 0;
+	outline: none;
+	background: white;
+	color: purple;
+	padding: 10px;
+	border: 1px solid purple;
+	font-size: 15px;
+	border-radius: 1rem;
+}
+.sidenav .see-all-btn button:hover{
+	color: red;
+	background: lightskyblue;
+	border: 1px solid blue;
+
+}
+
+.main {
+  margin-right: 100px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media (max-width: 700px) {
+  .sidenav {
+    display: none;
+  }
+  
+  .house-details {
+    padding: 0 5%; /* Adjust the padding for smaller screens */
+  }
+  .gallery{
+	  width: 100%;
+	  grid-gap: 10px;
+	  grid-template-areas: 'first first . .' 'first first . .';
+	  margin: 20px 0;
+  }
+  .gallery div img {
+    max-width: 100%;
+    height: auto;
+  }
+   .fundraising_buttons {
+    width: 100%; 
+    align-items: center; 
+  }
+  .fundraising_donate_btn{
+  	width: 100%;
+  }
+  
+  .fundraising_donate_btn button {
+    width: 30%; 
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
